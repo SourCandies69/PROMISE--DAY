@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Day</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        
+        #gif {
+            max-width: 100%;
+            max-height: 80vh;
+            margin-top: 30px;
+            opacity: 0; 
+            animation: fadeIn 2s forwards; 
+            cursor: pointer; 
+        }
+        #message{
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: 'Philosopher';
+            opacity: 0; 
+            animation: fadeIn 2s forwards;
+        }
+        #message span{
+            font-size: 30px;
+            color: hotpink;
+            font-family: 'Acme';
+        }
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="message">
+        <span>I promise to make you laugh and smile:</span><br><br>I'll strive to bring joy and laughter<br>into your life, sharing moments of happiness<br>and creating memories filled with laughter.<br>
+    </div>
+    <a href="PD7.html">
+        <img id="gif" src="6.gif" alt="6 GIF">
+    </a>
+    
+    <script>
+
+        const gif = document.getElementById('gif');
+
+        gif.addEventListener('click', function() {
+            window.location.href = 'PD7.html';
+        });
+    </script>
+</body>
+</html>
